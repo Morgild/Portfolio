@@ -2,12 +2,12 @@ import { Buttongray } from "./Buttongray";
 import { Planguage } from "./Planguage";
 export const Skills = () => {
   return (
-    <div className="bg-white px-20 py-24">
+    <div className="bg-white md:px-20 md:py-24 px-4 py-16">
       <Buttongray text="Skills" />
       <p className="w-full text-center text-[#4B5563] mt-4 mb-12">
         The skills, tools and technologies I am really good at:
       </p>
-      <div className="grid grid-cols-8 grid-rows-2 gap-y-12">
+      <div className="grid md:grid-cols-8 grid-cols-3 md:gap-12 gap-6 ">
         <Planguage text="Javascript" source="/icon-javscript.svg"/>
         <Planguage text="Typescript" source="/icon-typescript.svg"/>
         <Planguage text="React" source="/icon-react.svg"/>

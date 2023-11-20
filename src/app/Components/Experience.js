@@ -3,7 +3,7 @@ import { Buttongray } from "./Buttongray";
 import { Expcard } from "./Expcard";
 export const Experience = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-24 py-20 bg-[#F9FAFB] gap-12">
+    <div className="flex flex-col items-center justify-center md:px-24 md:py-20 px-4 py-16 bg-[#F9FAFB] gap-12">
       <div className="flex flex-col w-full">
         <Buttongray text="Experience" />
         <p className="text-xl text-[#4B5563] text-center leading-7 font-normal mt-4">Here is a quick summary of my most recent experiences:</p>

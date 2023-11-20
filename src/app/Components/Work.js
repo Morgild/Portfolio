@@ -2,7 +2,7 @@ import { Buttongray } from "./Buttongray";
 import { Workcard } from "./Workcard";
 export const Work = () => {
   return (
-    <div className="flex flex-col px-24 py-20 bg-white gap-12 ">
+    <div className="flex flex-col md:px-24 md:py-20 px-4 py-16 bg-white gap-12 ">
       <div className="flex flex-col gap-4">
         <Buttongray text="Work" />
         <p className="text-xl text-[#4B5563] text-center leading-7 font-normal mt-4">
@@ -10,7 +10,7 @@ export const Work = () => {
         </p>
       </div>
       <Workcard/>
-      <Workcard order='1'/>
+      <Workcard reverse="flex-row-reverse"/>
       <Workcard/>
     </div>
   );
