@@ -7,12 +7,12 @@ export const About = () => {
         <Buttongray text="About me"/>
       </div>
       <div className="AboutMe flex flex-col md:flex-row px-8 gap-12">
-        <div className=" md:h-[360px] dark:border-[#111827] h-[320px] md:w-[400px] h-[300px] mx-auto w-[280px] md:ml-[40px] md:bg-orange-300 relative">
+        <div className=" md:h-[360px] dark:border-[#111827] md:w-1/2 md:h-full md:max-w-[520px] md:mr-[40px] h-[300px] mx-auto w-[280px] md:bg-orange-300 relative">
           <img
-            className="border-8 border-white dark:border-[#111827] md:h-[320px] md:w-[280px] md:right-0 h-[280px] w-[240px] absolute top-0 md:bottom-0 md:right-0 left-[50%] translate-x-[-50%] md:translate-x-[100%] md:left-[-50%] absolute z-[1] object-cover cursor-pointer"
+            className="border-8 border-white dark:border-[#111827] md:aspect-[5/5] md:max-w-[520px]  h-[280px] w-[240px] md:w-full absolute top-0 left-[50%] translate-x-[-50%] absolute z-[1] object-cover cursor-pointer md:top-0 md:left-[100%] md:translate-x-[-100%]"
             src="/img_about.png"
           />
-          <div className="border-8 border-white dark:border-[#111827] md:h-[320px] md:w-[280px] md:right-0 h-[280px] w-[280px] left-[50%] translate-x-[-50%] bottom-0 bg-neutral-400 absolute z-[0] object-cover dark:bg-[#374151]"></div>
+          <div className="border-8 border-white dark:border-[#111827] md:max-w-[520px] md:aspect-[5/5] h-[280px] w-[280px] md:w-full left-[50%] translate-x-[-50%] bottom-0 bg-neutral-400 absolute z-[0] object-cover dark:bg-[#374151] md:top-0 md:left-[100%] md:translate-x-[-108%] md:translate-y-[10%]"></div>
         </div>
         <div className="md:w-1/2">
           <h2 className="text-[#111827] dark:text-[#F9FAFB] font-semibold text-3xl leading-9">

@@ -1,6 +1,5 @@
 import { Buttongray } from "./Buttongray";
 import { Planguage } from "./Planguage";
-
 export const Skills = (props) => {
   return (
     <div id='testimonials' className="bg-white md:px-20 md:py-24 px-4 py-16 dark:bg-[#030712]">

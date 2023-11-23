@@ -48,7 +48,7 @@ export const Intro = () => {
       </div>
       <div className="part1Img md:h-[360px]  h-[320px] md:w-[400px] h-[300px] mx-auto w-[280px] md:ml-[40px] relative">
         <img
-          className="border-8 border-white dark:border-[#030712] md:h-[320px] md:w-[280px] md:left-0 h-[280px] w-[240px] absolute top-0 md:bottom-0 md:right-0 left-[50%] translate-x-[-50%] md:translate-x-0 absolute z-[1] object-cover cursor-pointer"
+          className="border-8 border-white dark:border-[#030712] md:h-[320px] md:w-[280px] h-[280px] md:right-[50%]  md:translate-x-[-60%] md:translate-y-[5%] translate-y-[5%] w-[240px] absolute top-0  left-[50%] translate-x-[-50%] absolute z-[1] object-cover cursor-pointer"
           src="/img_profile.png"
         />
         <div className="border-8 border-white dark:border-[#030712] md:h-[320px] md:w-[280px] md:right-0 h-[280px] w-[280px] left-[50%] translate-x-[-50%] bottom-0 bg-neutral-400 absolute z-[0] object-cover dark:bg-[#374151]"></div>
