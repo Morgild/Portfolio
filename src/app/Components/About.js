@@ -2,18 +2,18 @@ import { BulletPoint } from "./Bulletpoint";
 import { Buttongray } from "./Buttongray";
 export const About = () => {
   return (
-    <div id="about" className="bg-[#F9FAFB] md:px-20 md:py-24 px-4 py-16 w-full flex flex-col gap-12 dark:bg-[#111827]">
+    <div id="About" className="bg-[#F9FAFB] md:px-20 md:py-24 px-4 py-16 w-full flex flex-col gap-12 dark:bg-[#111827]">
       <div className="AboutMeTitle flex items-center justify-center w-full">
         <Buttongray text="About me"/>
       </div>
       <div className="AboutMe flex flex-col md:flex-row px-8 gap-12">
-        <div className=" md:h-[360px] dark:border-[#111827] md:w-1/2 md:h-full md:max-w-[520px] md:mr-[40px] h-[300px] mx-auto w-[280px] md:bg-orange-300 relative">
-          <img
-            className="border-8 border-white dark:border-[#111827] md:aspect-[5/5] md:max-w-[520px]  h-[280px] w-[240px] md:w-full absolute top-0 left-[50%] translate-x-[-50%] absolute z-[1] object-cover cursor-pointer md:top-0 md:left-[100%] md:translate-x-[-100%]"
-            src="/img_about.png"
-          />
-          <div className="border-8 border-white dark:border-[#111827] md:max-w-[520px] md:aspect-[5/5] h-[280px] w-[280px] md:w-full left-[50%] translate-x-[-50%] bottom-0 bg-neutral-400 absolute z-[0] object-cover dark:bg-[#374151] md:top-0 md:left-[100%] md:translate-x-[-108%] md:translate-y-[10%]"></div>
-        </div>
+      <div className="part1Img md:w-1/2 md:h-[360px] h-[320px] md:max-w-[520px] h-[300px] mx-auto w-[280px] md:ml-[40px] relative">
+        <img
+          className="border-8 border-white dark:border-[#030712] md:h-[320px] md:w-full h-[280px] md:right-[0%]  md:translate-x-[-60%] md:translate-y-[7%] translate-y-[5%] w-[240px] absolute top-0  left-[50%] translate-x-[-50%] absolute z-[1] object-cover cursor-pointer"
+          src="/img_about.png"
+        />
+        <div className="border-8 border-white dark:border-[#030712] md:h-[320px] md:w-[400px] md:w-full md:right-0 md:translate-x-[-65%] h-[280px] w-[280px] left-[50%] translate-x-[-50%] bottom-0 bg-neutral-400 absolute z-[0] object-cover dark:bg-[#374151]"></div>
+      </div>
         <div className="md:w-1/2">
           <h2 className="text-[#111827] dark:text-[#F9FAFB] font-semibold text-3xl leading-9">
             Curious about me? Here you have it:

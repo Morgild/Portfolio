@@ -1,13 +1,16 @@
 import { Burgermenu } from "./Burgermenu";
 import { useState } from "react";
+import { Intro } from "./Intro";
+
 const menuList = ["About", "Work", "Testimonials", "Contact"];
 export const Header = (props) => {
   function toggleTheme() {
-    props.setIsOnDarkMode((prev) => !prev);
+    props.setIsOnDarkMode((a) => !a);
   }
   function drawer() {
     setShow((prev) => !prev);
   }
+
   const [drawerShow, setShow] = useState(false);
 
   return (
@@ -18,7 +21,13 @@ export const Header = (props) => {
         </div>
         <ul className="hidden gap-5 items-center dark:bg-black md:flex ">
           {menuList.map((item) => (
-            <li
+            <li onClick={() => {
+              document
+                .getElementById(`${item}`)
+                .scrollIntoView({ behavior: "smooth" } ,
+                console.log(document.getElementById('Work').scrollIntoView()));
+                
+            }}
               key={item}
               className="text-base font-medium text-[#4B5563] dark:text-[#D1D5DB] cursor-pointer"
             >

@@ -11,10 +11,10 @@ import { Footer } from "./Components/Footer";
 import { useRef, useState } from "react";
 
 export default function Home() {
-  const [isOnDarkMode, setIsOnDarkMode] = useState(false);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  const [isOnDarkMode, setIsOnDarkMode] = useState(true);
+  // const handleClick = () => {
+  //   ref.current?.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <div
       id="root"

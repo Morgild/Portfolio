@@ -2,7 +2,7 @@ export const Burgermenu = (props) => {
   return (
     <div
       id={"burgerMenu"}
-      className={`transition-all burgerMenu flex flex-col duration-1000 pl-[55px] w-screen h-full bg-gray-300  top-0 right-0 transition   z-20 fixed dark:bg-white ${
+      className={`transition-all ease-in-out burgerMenu flex flex-col duration-1000 pl-[55px] w-screen h-full bg-gray-300  top-0 right-0   z-20 fixed dark:bg-white ${
         props.drawerShow ? "right-[0%]" : "right-[-200%] bg-white "
       }`}
     >
@@ -22,7 +22,12 @@ export const Burgermenu = (props) => {
         <ul className="gap-4 p-4 items-start justify-around flex flex-col bg-white border-b border-[#F3F4F6] dark:border-[#1F2937] dark:bg-[#030712]">
           {props.menuList.map((item) => (
             <li key={`${item}1`}
-              onClick={props.drawer}
+              onClick={() => {
+                document
+                  .getElementById(`${item}`)
+                  .scrollIntoView({ behavior: props.drawerShow ? "instant":"smooth" });
+                  {props.drawer()}   
+              }}
               className="text-base font-medium text-[#4B5563] dark:text-[#D1D5DB] cursor-pointer"
             >
               {item}

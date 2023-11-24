@@ -7,7 +7,7 @@ import { TwitterIcon } from "./Svg files/TwitterIcon";
 import { PhoneIcon } from "./Svg files/PhoneIcon";
 export const Contacts = () => {
   return (
-    <div id='contact' className="md:px-24 md:py-20 px-4 py-16 bg-white flex flex-col align-center justify-center md:gap-12 gap-6 dark:bg-[#030712]">
+    <div id='Contact' className="md:px-24 md:py-20 px-4 py-16 bg-white flex flex-col align-center justify-center md:gap-12 gap-6 dark:bg-[#030712]">
       <div>
         <Buttongray text="Get in touch" />
         <div className="w-full flex justify-center">

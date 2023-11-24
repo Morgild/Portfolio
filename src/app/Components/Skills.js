@@ -2,7 +2,7 @@ import { Buttongray } from "./Buttongray";
 import { Planguage } from "./Planguage";
 export const Skills = (props) => {
   return (
-    <div id='testimonials' className="bg-white md:px-20 md:py-24 px-4 py-16 dark:bg-[#030712]">
+    <div id='Testimonials' className="bg-white md:px-20 md:py-24 px-4 py-16 dark:bg-[#030712]">
       <Buttongray text="Skills" />
       <p className="w-full text-center text-[#4B5563] dark:text-[#D1D5DB] mt-4 mb-12">
         The skills, tools and technologies I am really good at:

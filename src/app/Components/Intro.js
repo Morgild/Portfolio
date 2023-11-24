@@ -26,17 +26,13 @@ export const Intro = () => {
               Ahmedabad, India
             </span>
           </div>
-          <div className="flex items-center">
+          <div className="flex justify-c items-center">
             <div className="flex gap-2">
               <BulletPoint
-                bgColor="bg-[#10B981]"
-                w="4"
-                h="4"
-                text=""
+                bgColor="bg-[#10B981] w-2 h-2"
+                text="Available for new projects"
+                margin='gap-2'
               />
-              <span className="text-[#4B5563] dark:text-[#D1D5DB]">
-                Available for new projects
-              </span>
             </div>
           </div>
         </div>

@@ -7,19 +7,31 @@ export const Experience = () => {
       logo: "/upwork.png",
       position: "Sr. Frontend Developer",
       duration: "Nov 2021 - Present",
-      jd: `T1`,
+      jd: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Ut pretium arcu et massa semper, id fringilla leo semper.",
+        "Sed quis justo ac magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      ],
     },
     {
       logo: "/upwork.png",
       position: "Team Lead",
       duration: "Jul 2017 - Oct 2021",
-      jd: "T2",
+      jd: [
+        `Sed quis justo ac magna.`,
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Sed quis justo ac magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      ],
     },
     {
       logo: "/upwork.png",
       position: "Full Stack Developer",
       duration: "Dec 2015 - May 2017",
-      jd: "T3",
+      jd: [
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      ],
     },
   ];
   return (
@@ -31,13 +43,14 @@ export const Experience = () => {
         </p>
       </div>
       {expText.map((item) => (
-        <Expcard
-          logo={item.logo}
-          position={item.position}
-          duration={item.duration}
-          jd={item.jd}
-        />
-        
+        <>
+          <Expcard
+            logo={item.logo}
+            position={item.position}
+            duration={item.duration}
+            jd={item.jd}
+          ></Expcard>
+        </>
       ))}
     </div>
   );

@@ -1,12 +1,12 @@
 export const BulletPoint = (props) => {
   return (
-    <div className="flex">
-      <div className="w-[24px] h-[24px] flex items-center justify-center text-[#4B5563]">
+    <div className={`flex ${props.margin}`}>
+      <div className={`w-[24px]  h-[24px] flex justify-center items-center text-[#4B5563]`}>
         <div
-          className={`w-${props.w} h-${props.h} ${props.bgColor} rounded-full`}
+          className={`w-1 h-1 ${props.bgColor} rounded-full flex justify-center items-center`}
         ></div>
       </div>
-      <p>{props.text}</p>
+      <p className="flex text-[#4B5563] dark:text-[#D1D5DB] w-full">{props.text}</p>
     </div>
   );
 };
