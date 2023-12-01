@@ -1,4 +1,6 @@
+import { useDark } from "@/app/page";
 export const Burgermenu = (props) => {
+  const {isOnDarkMode,setIsOnDarkMode} = useDark();
   return (
     <div
       id={"burgerMenu"}
@@ -15,7 +17,7 @@ export const Burgermenu = (props) => {
             <img
               onClick={props.drawer}
               className="cursor-pointer"
-              src={!props.darkModeOn ? "/icon-x.png" : "/icon-x_dark.png"}
+              src={!isOnDarkMode? "/icon-x.png" : "/icon-x_dark.png"}
             />
           </div>
         </div>
@@ -42,7 +44,7 @@ export const Burgermenu = (props) => {
             <p className="text-base font-medium text-[#4B5563] dark:text-[#D1D5DB] cursor-pointer">
               Switch Theme
             </p>
-            {!props.darkModeOn ? (
+            {!isOnDarkMode ? (
               <img className="w-9 h-9 cursor-pointer" src="/icon-light.png" />
             ) : (
               <img className="w-9 h-9 cursor-pointer" src="/icon-dark.png" />

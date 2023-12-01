@@ -4,6 +4,7 @@ import { GitIcon } from "./Svg files/GitIcon";
 import { TwitterIcon } from "./Svg files/TwitterIcon";
 import { FigmaIcon } from "./Svg files/FigmaIcon";
 export const Intro = () => {
+  // const [] = useDark();
   return (
     <div className="flex flex-col flex-col-reverse md:flex-row place-content-between md:px-20 md:py-24 px-4 py-16 bg-white dark:bg-[#030712]">
       <div className="part1Text flex flex-col gap-12 md:w-8/12">

@@ -1,0 +1,63 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCard {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: relative;
+}
+
+/* This container is needed to position the front and back side */
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container
+.flipCard:active .flipCardInner {
+  transform: rotateY(180deg);
+} */
+
+/* Position the front and back side */
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipCardFront {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("data:image/png;base64,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");
+  background-size: cover;
+}
+
+/* Style the back side */
+.flipCardBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: white;
+  border: 1px solid black;
+  transform: rotateY(180deg);
+}
+.flipImp {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
